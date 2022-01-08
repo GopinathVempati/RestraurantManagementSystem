@@ -1,8 +1,8 @@
 public class Ingredients {
     String ingredientName;
-    float quantity;
+    double quantity;
 
-    public Ingredients(String ingredientName, float quantity) {
+    public Ingredients(String ingredientName, double quantity) {
         this.ingredientName = ingredientName;
         this.quantity = quantity;
     }
@@ -15,11 +15,11 @@ public class Ingredients {
         this.ingredientName = ingredientName;
     }
 
-    public float getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(float quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 }
