@@ -69,8 +69,8 @@ public class Main extends BaseClass {
                         if (mReceipeIngredient.getQuantity() * qty > value.getQuantity()) {
                             requiredAmount += mReceipeIngredient.getQuantity() * value.getCost();
                             internalOrder.put(value.getName(), (mReceipeIngredient.getQuantity() * qty) - value.getQuantity());
-                        }else {
-                            value.setQuantity(value.getQuantity()-(mReceipeIngredient.getQuantity() * qty));
+                        } else {
+                            value.setQuantity(value.getQuantity() - (mReceipeIngredient.getQuantity() * qty));
                         }
                     }
                 }
