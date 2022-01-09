@@ -31,7 +31,7 @@ public class BaseClass {
         String st;
         Accounts accounts = null;
         while ((st = br.readLine()) != null) {
-            accounts = new Accounts(Long.parseLong(st));
+            accounts = new Accounts(Integer.parseInt(st));
         }
         return accounts;
     }

@@ -1,15 +1,15 @@
 public class Accounts {
-    private long money;
+    private int money;
 
-    public Accounts(long money) {
+    public Accounts(int money) {
         this.money = money;
     }
 
-    public long getMoney() {
+    public int getMoney() {
         return money;
     }
 
-    public void setMoney(long money) {
+    public void setMoney(int money) {
         this.money = money;
     }
 }

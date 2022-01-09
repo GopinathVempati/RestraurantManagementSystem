@@ -32,4 +32,10 @@ public class Inventory {
     public void setCost(int cost) {
         this.cost = cost;
     }
+
+    @Override
+    public String toString() {
+        return "name='" + name + ", quantity=" + quantity + ", cost=" + cost ;
+
+    }
 }
