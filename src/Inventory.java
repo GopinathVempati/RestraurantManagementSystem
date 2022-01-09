@@ -1,9 +1,9 @@
 public class Inventory {
     private String name;
-    private int quantity;
-    private int cost;
+    private double quantity;
+    private double cost;
 
-    public Inventory(String name, int quantity, int cost) {
+    public Inventory(String name, double quantity, double cost) {
         this.name = name;
         this.quantity = quantity;
         this.cost = cost;
@@ -17,19 +17,19 @@ public class Inventory {
         this.name = name;
     }
 
-    public int getQuantity() {
+    public double getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(int quantity) {
+    public void setQuantity(double quantity) {
         this.quantity = quantity;
     }
 
-    public int getCost() {
+    public double getCost() {
         return cost;
     }
 
-    public void setCost(int cost) {
+    public void setCost(double cost) {
         this.cost = cost;
     }
 
