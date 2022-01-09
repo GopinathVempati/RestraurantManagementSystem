@@ -34,9 +34,7 @@ public class Main extends BaseClass {
                     System.out.println(ts.dishNCost());
                 }
             }
-            case 4 -> {
-                System.out.println("Total Expenses : " + expensesBeforeIncome);
-            }
+            case 4 -> System.out.println("Total Expenses : " + expensesBeforeIncome);
             case 5 -> {
                 double totalSalesAmount = 0;
                 for (TotalSales ts : totalSales) {
@@ -46,9 +44,11 @@ public class Main extends BaseClass {
             }
             case 6 -> placeOrder(scanner, receipe, inventories, totalSales);
             case 7 -> {
+                System.out.println("Exiting now...");
+                scanner.nextLine();
             }
         }
-        mainMenu();
+//        mainMenu();
     }
 
     private static void placeOrder(Scanner scanner, ArrayList<Receipe> receipe, ArrayList<Inventory> inventories, ArrayList<TotalSales> totalSales) {
@@ -70,10 +70,12 @@ public class Main extends BaseClass {
             });
             double costOfDish = qty * priceOfOrder[0];
             totalSales.add(new TotalSales(filter.get(0).name, qty, costOfDish));
+            System.out.println("Your order amount in total for " + qty + dishName+"(s)" + costOfDish);
             System.out.println("Yay! your order has been placed successfully ");
             System.out.println(qty + " " + dishName + " is being prepared at our kitchen");
         } else {
-            System.out.println("Sorry the dish your are trying to order is not available, Do you want to try with other dish : ");
+            System.out.println("Sorry the dish your are trying to order is not available, \n " +
+                    "Do you want to try with other dish : Type Yes or No");
             String sn = scanner.next();
             if (sn.equalsIgnoreCase("no")) {
                 scanner.close();
