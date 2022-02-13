@@ -10,8 +10,6 @@ public class Main extends BaseClass {
     static double expensesBeforeIncome = 0;
 
     public static void main(String[] args) throws IOException {
-
-
         getInventoriesList(inventories);
         accounts = getAccountInfo();
         intialAmount = accounts.getMoney();
